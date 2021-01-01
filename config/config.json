@@ -1,0 +1,16 @@
+{
+    "proxy_file": "in/proxies.txt",
+    "usedproxies": "data/usedproxies.txt",
+    "timeout": 15000,
+    "use_proxies": true,
+    "sleepdelay": 0.3,
+    "nb_threads": 20,
+    "skip_if_captcha": false,
+    "debug": false,
+    "invite_codes": "veeUKEfHpw",
+    "username": "random",
+    "usernames": "config/nickler.txt",
+    "password": "123456Sifre.",
+    "captchakey": "Your2CaptchaApiKey",
+    "sitekey": "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn"
+}
