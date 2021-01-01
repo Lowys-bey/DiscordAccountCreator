@@ -4,7 +4,6 @@ import sys
 import random
 import string
 import os
-from time import sleep
 import time
 from colorama import init, Fore
 import queue
@@ -228,7 +227,7 @@ def register(email, username, password, proxy, conf):
             "http://2captcha.com/res.php?key={}&action=get&id={}".format(API_KEY, captcha_id)).text
         #print(f"{Fore.CYAN}Captcha Çözülüyor...")
         while 'CAPCHA_NOT_READY' in recaptcha_answer:
-            sleep(5)
+            time.sleep(5)
             recaptcha_answer = ss.get(
                 "http://2captcha.com/res.php?key={}&action=get&id={}".format(API_KEY, captcha_id)).text
         recaptcha_answer = recaptcha_answer.split('|')[1]
